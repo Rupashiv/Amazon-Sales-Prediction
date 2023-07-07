@@ -1,0 +1,10 @@
+﻿Approach:
+
+
+To solve a machine learning problem of predicting the length of a product using its metadata. The dataset consists of two files - train.csv and test.csv, which contain information about product ID, title, description, bullet points, product type ID, and product length for millions of products. The aim is to build a machine learning model that can predict the length of a product accurately from the given metadata.
+
+
+The code loads the train.csv file, drops the unnecessary columns such as title, description, and bullet points, and splits the remaining data into X_train (independent variables) and y_train (dependent variable). It then uses a pipeline to preprocess the categorical variables using one-hot encoding and the text variables using count vectorization.
+
+
+A random forest regressor is used as the main model, and the model is trained on the preprocessed data. After training the model, it is tested on the test data by predicting the product length using the trained model. Finally, the evaluation metrics such as mean squared error, mean absolute error, R-squared, and mean absolute percentage error are calculated to assess the model's performance.
